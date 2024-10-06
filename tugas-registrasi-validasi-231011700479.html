@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Landing Page - Iki</title>
+		<title>Form Registrasi dengan Validasi - Iki</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 	</head>
 	<body class="bg-light">
@@ -25,7 +25,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" href="/">Home</a>
+							<a class="nav-link" href="/">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="/tugas-responsivitas-231011700479.html">Tugas 1</a>
@@ -42,7 +42,7 @@
 							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/tugas-registrasi-validasi-231011700479.html"
+							<a class="nav-link active" href="/tugas-registrasi-validasi-231011700479.html"
 								>Tugas 5</a
 							>
 						</li>
@@ -66,65 +66,49 @@
 		</nav>
 		<!-- end navbar -->
 
-		<!-- About -->
-		<div class="container mt-5">
-			<div class="row">
-				<div class="col-12 col-lg-4">
-					<img src="img/7.jpg" alt="img" class="w-100 rounded-circle" />
-				</div>
-				<div class="col-md-8 d-flex align-items-center">
-					<div class="d-block text-center text-lg-start mt-4 mt-lg-0">
-						<h2>Hallo my name is Rizki Ramadhan</h2>
-						<h5>Front End Developer</h5>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit asperiores sunt
-						odio esse molestias animi iusto soluta, nihil fuga obcaecati vitae excepturi
-						aliquam officia! Animi fuga est atque nisi dolores? Aspernatur error ratione
-						maiores. Fugiat, delectus ipsam, doloremque cum sunt excepturi quibusdam
-						exercitationem adipisci ipsum inventore placeat cumque voluptatum veniam.
-						<br /><br />
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit
-						consequuntur, numquam reiciendis doloremque vitae dignissimos, soluta provident
-						asperiores vel quod, ea nostrum enim omnis!
-						<br /><br />
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda impedit
-						consequuntur, numquam reiciendis doloremque vitae dignissimos, soluta provident
-						asperiores vel quod, ea nostrum enim omnis!
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End About -->
-
-		<!-- Gallery -->
+		<!-- Simple Form -->
 		<div class="container mt-5">
 			<div class="row">
 				<div class="col-12 text-center">
-					<h1>Gallery</h1>
+					<h1>Simple Form</h1>
 					<hr />
 				</div>
 			</div>
-			<div class="row mx-5 mt-5">
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/7.jpg" alt="tes" class="w-100" />
+			<form action="" id="frmSbmt">
+				<div class="row mx-5 mt-5">
+					<div class="col-12 col-md-6 mb-3">
+						<div class="form-group">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" class="form-control" id="name" required />
+						</div>
+					</div>
+					<div class="col-12 col-md-6 mb-3">
+						<div class="form-group">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" required />
+						</div>
+					</div>
+					<div class="col-12 mb-3">
+						<div class="form-group">
+							<label for="password" class="form-label">Password</label>
+							<input type="password" class="form-control" id="password" required />
+						</div>
+					</div>
+					<div class="col-12 mb-3">
+						<div class="form-group">
+							<label for="cfm-password" class="form-label">Confirm Password</label>
+							<input type="password" class="form-control" id="cfm-password" required />
+						</div>
+					</div>
+					<div class="col-12 mt-5">
+						<div class="w-100 d-flex justify-content-end">
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</div>
 				</div>
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/3.jpg" alt="tes" class="w-100" />
-				</div>
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/5.jpg" alt="tes" class="w-100" />
-				</div>
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/2.jpg" alt="tes" class="w-100" />
-				</div>
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/6.jpg" alt="tes" class="w-100" />
-				</div>
-				<div class="col-lg-4 col-12 col-sm-6 p-0">
-					<img src="img/4.jpg" alt="tes" class="w-100" />
-				</div>
-			</div>
+			</form>
 		</div>
-		<!-- End Gallery -->
+		<!-- End Simple Form -->
 
 		<footer class="w-100 bg-dark mt-5 px-3 text-white">
 			<div class="container">
@@ -230,5 +214,6 @@
 		</footer>
 
 		<script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
 	</body>
 </html>
